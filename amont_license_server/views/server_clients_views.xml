@@ -14,6 +14,8 @@
                     <group>
                         <field name="name"/>
                         <field name="database"/>
+                        <field name="partner_id"/>
+                        <field name="email"/>
                         <field name="license"/>
                     </group>
                     <group>
@@ -21,6 +23,13 @@
                         <field name="end_date"/>
                     </group>
                 </sheet>
+                <div class="o_attachment_preview"/>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids" options="{'post_refresh': 'always'}"/>
+                </div>
             </form>
         </field>
     </record>
@@ -33,10 +42,7 @@
                 <field name="name"/>
                 <field name="database"/>
                 <field name="license"/>
-                <field name="state" 
-                    widget="badge" 
-                    decoration-success="state == 'active'"
-                    decoration-danger="state == 'expired'"/>
+                <field name="state" widget="badge" decoration-success="state == 'active'" decoration-danger="state == 'expired'"/>
                 <field name="start_date"/>
                 <field name="end_date"/>
             </tree>

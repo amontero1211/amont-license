@@ -8,6 +8,9 @@ class ServerClient(http.Controller):
 
     @route("/license/validate", type="json", methods=["POST"], auth="public")
     def validate_license(self):
+        print("------------------")
+        print("making license validation")
+        print("------------------")
         data = request.get_json_data()
         
         res = request.env["amont.server.client"].sudo().validate_license(

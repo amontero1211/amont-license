@@ -12,6 +12,8 @@
         "security/ir.model.access.csv",
         "views/server_clients_views.xml",
         "views/menu.xml",
+        "data/mail_template_data.xml",
+        "data/service_cron.xml",
     ],
     "demo": [],
 }

@@ -10,11 +10,13 @@
     "depends": ["account"],
     "data": [
         "views/res_company_views.xml",
-        "views/account_move_views.xml"
+        "views/account_move_views.xml",
+        "data/service_cron.xml",
     ],
     "assets": {
         "web.assets_backend": [
-            "amont_license_client/static/src/views/*",
+            # "amont_license_client/static/src/views/*",
+            "amont_license_client/static/src/services/*",
         ],
     },
     "demo": [],
